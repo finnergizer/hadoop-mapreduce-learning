@@ -26,8 +26,8 @@ for line in sys.stdin:
         highestSale = 0
 
     oldKey = thisKey
-    if thisSale > highestSale:
-        highestSale = thisSale
+    if float(thisSale) > highestSale:
+        highestSale = float(thisSale)
 
 if oldKey != None:
     print oldKey, "\t", highestSale
